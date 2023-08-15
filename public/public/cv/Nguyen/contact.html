@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="public/Sass/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <div class="logo">
+          <a href="#index">Jordan Nguyen</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="./index.html">Acceuil</a>
+            </li>
+            <li>
+              <a href="./index.html">A propos</a>
+            </li>
+            <li>
+              <a href="./index.html">Skills</a>
+            </li>
+            <li>
+              <a href="./index.html">CV</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Header -->
+    <section id="index-contact" class="index-contact">
+      <h1 class="hidden">Contact</h1>
+      <div class="fil">
+        <div class="col contact">
+          <h2>Let's Keep in touch!</h2>
+          <p>
+            Avez-vous des questions ou voulez-vous prendre contact avec moi?<br />
+            N'hésitez pas! Je serais ravi de vous lire !
+          </p>
+            <form action="https://httpbin.org/post" method="post">
+                <div class="form">
+                    <div class="left">
+                        <div class="sex">
+                            <label class="radioLabel">Sexe</label>
+                            <div class="radio">
+                                <input type="radio" name="sex" id="man"><label for="man">Mister</label>
+                                <input type="radio" name="sex" id="woman"><label for="woman">Miss</label>
+                            </div>
+                        </div>
+                        <input type="text" name="firstname" placeholder="NOM Prénom *" required="required">
+                        <input class="email" type="text" name="email"  placeholder="Email *" required="required">
+                        <select name="subject" required="required">
+                            <option value selected>Sujet</option>
+                            <option value="project">Projet Pro</option>
+                            <option value="question">Question</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message *" required="required"></textarea>
+                        <input class="bouton" type="submit" value="Envoyer">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+          <img src="./public/img/contact.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Stardos+Stencil&display=swap');
+
+h1, h2{
+    font-family: 'Stardos Stencil';
+}
+
+p{
+    font-family: 'Merriweather';
+}
+
+.hidden{
+    display: none;
+}
+
+.element-price-list-title, .element-price-list-price{
+    font-family: 'Stardos Stencil';
+    font-weight: 500;
+}
+
+.element-price-list-description{
+    font-family: 'Merriweather';
+}
+
+#line {
+  width: 1990px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.backdark{
+    background-color: #2b3035;
+}
+
+.actives{
+    color: #B3914D;
+}
+
+/* Accueil */
+
+.bg{
+    background-image: url(./img/accueil1.webp);
+    background-position: center;
+    padding: 100px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    height: calc(80vh - 90px);
+   
+}
+
+.bg div{
+    text-align: center;
+}
+
+#card-index{
+    background-color: #2b3035;
+    background-size: cover;
+    border: 3px solid #B3914D;
+    width: 330px;
+    height: 314px;
+}
+
+#welcome{
+    font-size: 33px;
+}
+
+#welcome2{
+    font-size: 19.3px;
+}
+
+#welcome3{
+    font-size: 55px;
+}
+
+/* Contact */
+.backimg {
+    background-image: url("./img/contactback.webp");
+    background-size: cover;
+}
+.backcolor {
+    background-color: #1C2429; 
+    background-size: cover;
+}
+  
+.contactez-nous {
+    height: 50vh;
+}
+
+.grey {
+    background-color: lightgrey;
+    font-family:'Merriweather';
+} 
+
+#card-contact {
+    background: #1C2429;
+    border: 2px solid #B3914D;
+    background-size: cover;
+}
+
+#contact1 {
+    font-size: 44px;
+}
+
+#contact2 {
+    font-size: 19px;
+}
+
+#contact3 {
+    font-size: 19px; 
+}
+  
+/* Menu */
+
+.hero{
+    height: calc(100vh - 90px);
+    background: url(./img/background-menu.webp);
+    background-size: cover;
+}
+
+#card-menu{
+    background: #1C2429;
+    border: 2px solid #B3914D;
+    background-size: cover;
+}
+
+#card-menu div p{
+    color: white;
+}
+
+#card-menu div p span{
+    color: #B3914D;
+    font-weight: bold;
+}
+
+.back1{
+    background-color: #D9D9D9;
+    border: 1px solid #1C2429;
+}
+
+.back2{
+    background: #1C2429;
+    color: white;
+    border: 3px solid #B3914D;
+}
+
+.icon-white{
+    height: 15px;
+}
+
+.element-price-list-separator {
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #1C2429;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.element-price-list-separator-bl {
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 15px;
+}
+
+/* Team */
+
+.decoration-a {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.backfond {
+    background-color: rgba(28, 36, 41, 1);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.photo-profil {
+    max-width: 210px;
+    max-height: 210px;
+}
+
+.gold-line {
+    background-color: #b2914d;
+    border-radius: 50px;
+    height: 6px;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* footer */
+.white-line{
+    background-color: #FFFFFF;
+    max-width: 30px;
+    height: 3px;
+}
+
+.text-adress{
+    max-width: 212px;
+    font-size: 19.3px;
+}
+
+.social-icon{
+    margin-bottom: 100px;
+    fill: #B2914D;
+}
+
+.input-field{
+    border: solid 2px #B2914D;
+    margin-bottom: 133px;
+}
+
+@media screen and (max-width: 575.9px) { 
+    .description-profil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    #card-index{
+        width: 214px;
+        height: 203px;
+    }
+    #welcome{
+        font-size: 19.3px;
+    }
+    
+    #welcome2{
+        font-size: 15px;
+    }
+    
+    #welcome3{
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 1400px){
+    #card-contact{
+        width: 440px;
+        height: 354px;
+        
+    }
+    #contact1 {
+        font-size: 44px;
+    }
+
+    #contact2, #contact3 {
+        font-size: 19px;
+    }
+    
+    .media {
+        display: none; 
+        margin: auto;
+    }
+
+    #section2, #section3, #section4, #section0{
+        margin: 30px 0;
+    }
+}

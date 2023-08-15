@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header class="backheader">
+    <img class="tofCV" src="/Users/User/Desktop/HTML/photo CV.PNG" alt="">
+    <h1 class="bigtitre">Bastien Pelletier</h1>
+    <h3>Développeur en herbe</h3>
+    <a href="./Formations.html"> <button class="styled">Formations & Dipômes</button></a>
+    <a href="./ExpériencePro.html"><button class="styled">Expériences Professionnelles</button></a>
+    <a href="./compétences.html">  <button class="styled">Compétences</button></a>
+    <a href="#intérêts"> <button class="styled">Intérêts</button></a>
+    <a href="#contact"> <button class="styled">Contact</button></a>
+    <form>
+        <input type="search" name="q" placeholder="rechercher">
+        <input type="submit" value="let's go">
+    </form>
+</header>
+<body>  
+<div id="contact">
+    <h2>Contact</h2>
+    <img class="contact" src="./Info perso.png" alt="">
+</div>
+
+<styleform>
+    <div>
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact</p>
+        <form class="formm" action="https://httpbin.org/get" method="get">
+            <div class="radio">
+                <input type="radio" id="Homme" name="Homme">
+                <label for="Homme">Homme</label>
+                <input type="radio" id="Femme" name="Femme">
+                <label for="Femme">Femme</label>
+            </div>
+            <div>
+                <label for="nom">Prénom</label>
+                <input type="text" id="nom" name="nom" placeholder="jean-bernard" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="wéwéwé@mail.com" required>
+            </div>
+            <div>
+                <label for="sujet">Sujet</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="probleme-compte">Problème avec mon compte</option>
+                    <option value="question-produit">Question à propos d’un produit</option>
+                    <option value="suivi-commande">Suivi de ma commande</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="écrire ici...." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</styleform>
+
+</body>
+<footer class="backfooter">
+    <a href="./index.html"> <button class="styled">Accueil</button></a>
+    <h3>@ Pelletier Bastien </h3>
+</footer>
+
+
+
+

@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-desktop" viewBox="0 0 32 32">
+<path d="M11.133 28v-2h2.867v-3.333h-9.333q-0.8 0-1.4-0.6t-0.6-1.4v-14.667q0-0.8 0.6-1.4t1.4-0.6h22.667q0.8 0 1.4 0.6t0.6 1.4v14.667q0 0.8-0.6 1.4t-1.4 0.6h-9.333v3.333h2.867v2h-9.733zM4.667 20.667h22.667v-14.667h-22.667v14.667zM4.667 20.667v0z"></path>
+</symbol>
+<symbol id="icon-mail" viewBox="0 0 32 32">
+<path d="M4.667 26.667q-0.8 0-1.4-0.6t-0.6-1.4v-17.333q0-0.8 0.6-1.4t1.4-0.6h22.667q0.8 0 1.4 0.6t0.6 1.4v17.333q0 0.8-0.6 1.4t-1.4 0.6h-22.667zM16 16.6l-11.333-7.433v15.5h22.667v-15.5l-11.333 7.433zM16 14.6l11.2-7.267h-22.367l11.167 7.267zM4.667 9.167v0z"></path>
+</symbol>
+</defs>
+</svg>

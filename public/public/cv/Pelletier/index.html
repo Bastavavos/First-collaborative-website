@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="backheader">
+        <img class="tofCV" src="bud-removebg-preview.png" alt="photo">
+        <h1 class="bigtitre">Bastien Pelletier</h1>
+        <h3>Développeur en herbe</h3>
+        <a class="styled" href="./Formations.html"> <button class="styled" role="button">Formations & Dipômes</button></a>
+        <a class="styled" href="./ExpériencePro.html"><button class="styled" role="button" >Expériences Professionnelles</button></a>
+        <a class="styled" href="./compétences.html">  <button class="styled" role="button">Compétences</button></a>
+        <a class="styled" href="#intérêts"> <button class="styled" role="button">Intérêts</button></a>
+        <a class="styled" href="#contact"> <button class="styled" role="button">Contact</button></a>
+        <form>
+            <input type="search" name="q" placeholder="rechercher">
+            <input type="submit" value="let's go">
+        </form>
+    </header>
+    <div class="bord">
+
+    </div>
+    <ol class="bord">
+
+    </ol>
+    <span class="bord">
+        
+    </span>
+
+    <hr>
+    <div class="fullboxed">
+        <div class="box1">
+            <h2>Formations & Diplômes</h2>
+            <ul>
+                <li>2017 : Bac ES</li>
+                <li>2018/20 : DEUG économie-gestion IAE</li>
+                <li>2020/21 : L3 économie-finance</li>
+                <li>2021/22 : Pizzeria, Bar, Tabac</li>
+            </ul>
+        </div>
+        <div class="box2">
+            <h2>Compétences</h2>
+            <ol>
+                <li>Dynamisme</li>
+                <li>Capacité d'adaptation</li>
+                <li>Sens de l'organisation</li>
+                <li>Fiabilité</li>  
+            </ol>
+        </div>
+    </div>
+    <hr>
+    <div class="box3">
+        <h2>Expériences Professionnelles</h2>
+        <table class="tableau">
+            <caption>Exp.Pro.</caption>
+            <thead>
+                <tr>
+                    <th>postes occupés</th>
+                    <th>dates/lieux</th>
+                    <th>compétences requises</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>préparateur véhicules neufs</td>
+                    <td>Jean-Lain/Meythet 2019</td>
+                    <td>Gestion des priorités</td>
+                </tr>
+                <tr>
+                    <td>manutentionnaire</td>
+                    <td>UPS Annecy 2020</td>
+                    <td>organisation</td>
+                </tr>
+                <td>vendeur tabac/presse</td>
+                <td>Villaz 2021/22</td>
+                <td>Flexibilité</td>
+                <tr>
+                    <td>Agent polyvalent</td>
+                    <td>Réunion 2022</td>
+                    <td>Ponctualité</td>
+                </tr>
+                <tr>
+                    <td>Serrurier/poseur</td>
+                    <td>Debroux 2023</td>
+                    <td>Maîtrise outils spécifiques</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+    <hr>
+    <div id="contact">
+        
+        <h2>Contact</h2>
+        <img class="contact" src="./Info perso.png" alt="infosperso">
+        
+        <hr>
+        <!-- formulaire -->
+            <div>
+                <h1>Contactez-nous</h1>
+                <p>Un problème, une question, envie de nous envoyer un message ? N’hésitez pas à utiliser ce formulaire pour prendre contact</p>
+                <form class="formm" action="https://httpbin.org/post" method="post">
+                    <div class="radio">
+                        <input type="radio" id="Homme" name="Homme">
+                        <label for="Homme">Homme</label>
+                        <input type="radio" id="Femme" name="Femme">
+                        <label for="Femme">Femme</label>
+                    </div>
+                    <div>
+                        <label for="nom">Prénom</label>
+                        <input type="text" id="nom" name="nom" placeholder="jean-bernard" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="wéwéwé@mail.com" required>
+                    </div>
+                    <div>
+                        <label for="sujet">Sujet</label>
+                        <select name="sujet" id="sujet" required>
+                            <option value="">Choisissez le sujet de votre message</option>
+                            <option value="probleme-compte">Problème avec mon compte</option>
+                            <option value="question-produit">Question à propos d’un produit</option>
+                            <option value="suivi-commande">Suivi de ma commande</option>
+                            <option value="autre">Autre...</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" placeholder="écrire ici...." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <hr>
+    <div id="intérêts">
+        <h2>Intérêts</h2>
+        <a class="poslien" href="https://www.twitch.tv/carailtv"><button>twitch carailTV</button> </a>
+        <a class="poslien" href="https://www.twitch.tv/pj_graphicart"><button>twitch pjgraphicarts</button></a>
+    </div> 
+    
+    <div class="video">
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/7a0QW3zJc0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            
+        </iframe>
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/AtnlyrRfhS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            
+        </iframe>
+        
+        <iframe width="600" height="300" src="https://www.youtube.com/embed/HQopEEurQYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            
+        </iframe> 
+    </div>
+    <div class="choix">
+        <label> choix </label>
+        <select> 
+            <option> choix 1</option>
+            <option> choix 2</option>
+            <option> choix 3</option>
+        </select>
+        <div>
+            <button>submit</button>
+        </div>
+    </div>
+    <footer class="backfooter">
+        <a href="./index.html"> <button class="styled">Accueil</button></a>
+        <h3>@ Pelletier Bastien </h3>
+    </footer>
+</body>
+</html>
+

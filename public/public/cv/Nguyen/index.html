@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="public/CSS/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="content">
+        <div class="logo">
+          <a href="#index">Jordan Nguyen</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#index" onclick="select()">Acceuil</a>
+            </li>
+            <li>
+              <a href="#aboutme" onclick="select()">A propos</a>
+            </li>
+            <li>
+              <a href="#skills" onclick="select()">Skills</a>
+            </li>
+            <li>
+              <a href="#cv" onclick="select()">CV</a>
+            </li>
+            <li>
+              <a href="./contact.html" onclick="select()">Contact</a>
+            </li>
+          </ul>
+        </nav> 
+        <div class="nav-responsive"  onclick="showHideMenu()">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Index -->
+    <section id="index" class="index">
+      <h1 class="hidden">Développeur web</h1>
+      <div class="content">
+        <div class="letters">
+          <p id="dev">Développeur</p>
+          <p id="full">Full</p>
+          <p id="web">Web</p>
+          <p id="stack">Stack</p>
+        </div>
+        <div class="lignes">
+          <hr id="ligne1" />
+          <hr id="ligne2" />
+          <hr id="ligne3" />
+        </div>
+        <div class="picture">
+          <img src="public/img/Frame1.png" alt="" />
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-github git"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin link"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- A propos -->
+    <section id="aboutme" class="aboutme">
+      <h2>A Propos de moi</h2>
+      <div class="content">
+        <p>
+          <span>Je suis développeur web Full-Stack et j'aime ça!</span><br />
+          Je suis né à Marseille et j'ai grandi à Madrid. <br />
+          Récemment diplômé en tant que développeur Web et web mobile suite à
+          une reconversion professionnelle. Lors de ma formation j'ai acquis de
+          nombreuses compétences et connaissances grâce à des projets réalisés
+          dans différents langages de programmation.
+        </p>
+        <div class="fil">
+          <div class="col">
+            <h3>Données personnelles</h3>
+            <ul>
+              <li>
+                <strong>Date de naissance</strong>
+                16-04-1989
+              </li>
+              <li>
+                <strong>Téléphone</strong>
+                (+33) 0768773939
+              </li>
+              <li>
+                <strong>Email</strong>
+                nguyenjordan89@gmail.com
+              </li>
+              <li>
+                <strong>Addresse</strong>
+                21 Chemin du bray, Annecy
+              </li>
+              <li>
+                <strong>Langue</strong>
+                <span>Français</span> Bilingue <span>Espagnole</span> Bilingue
+                <span>Anglais</span> B2
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Centres d'intérêt</h3>
+            <div class="content-interest">
+              <div class="interest">
+                <img src="./public/img/game.png" alt="" />
+                <span>Jeux-Vidéo</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/music.png" alt="" />
+                <span>Music</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/ticket.png" alt="" />
+                <span>Audiovisuel</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/plane.png" alt="" />
+                <span>Voyage</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/bbq.png" alt="" />
+                <span>Cuisine</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/trekkin.png" alt="" />
+                <span>Randonnée</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/gym.png" alt="" />
+                <span>Crossfit</span>
+              </div>
+              <div class="interest">
+                <img src="./public/img/book.png" alt="" />
+                <span>Lecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="content">
+        <h2>Skills</h2>
+        <div class="fil">
+          <div class="col">
+            <h3>Compétences techniques</h3>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="bar-progress">
+                <div class="progress htmlcss">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="bar-progress">
+                <div class="progress javascript">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="bar-progress">
+                <div class="progress php">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>CMS Wordpress</span>
+              <div class="bar-progress">
+                <div class="progress cms">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React.js</span>
+              <div class="bar-progress">
+                <div class="progress react">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Symfony 6</span>
+              <div class="bar-progress">
+                <div class="progress symfony">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL (MySQL, Postgrest & MariaDB)</span>
+              <div class="bar-progress">
+                <div class="progress sql">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="bar-progress">
+                <div class="progress photoshop">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Github</span>
+              <div class="bar-progress">
+                <div class="progress git">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Compétences professionnelles</h3>
+            <div class="skill">
+              <span>Communication</span>
+              <div class="bar-progress">
+                <div class="progress communication">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Travail en équipe</span>
+              <div class="bar-progress">
+                <div class="progress team">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>créativité</span>
+              <div class="bar-progress">
+                <div class="progress creativity">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Curieux sur les technologies</span>
+              <div class="bar-progress">
+                <div class="progress curiosity">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Travail indépendant</span>
+              <div class="bar-progress">
+                <div class="progress independent">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Rigoureux</span>
+              <div class="bar-progress">
+                <div class="progress stiff">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Patient</span>
+              <div class="bar-progress">
+                <div class="progress pacient">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Organisé</span>
+              <div class="bar-progress">
+                <div class="progress organised">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Polyvalent</span>
+              <div class="bar-progress">
+                <div class="progress versatile">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CV -->
+    <section id="cv" class="cv">
+      <div class="content">
+        <h2>CV</h2>
+        <div class="fil">
+          <div class="col">
+            <h3>Formation</h3>
+            <div class="item">
+              <h4>BTS Développeur web et web mobile</h4>
+              <span class="home">Studi</span>
+              <p>Paris</p>
+              <span class="date">Janvier 2023</span>
+            </div>
+            <div class="item">
+              <h4>Diplome de pâtisserie</h4>
+              <span class="home">Le Cordon Bleu</span>
+              <p>Paris</p>
+              <span class="date">Juin 2009</span>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Experiences Professionnelles</h3>
+            <div class="item">
+              <h4>Glacier</h4>
+              <span class="home">Palais des glaces</span>
+              <p>Annecy</p>
+              <span class="date">2020 - 2022</span>
+            </div>
+            <div class="item">
+              <h4>Pâtissier</h4>
+              <span class="home">La Réserve Hotel & SPA</span>
+              <p>Genève ( Suisse )</p>
+              <span class="date">Mai 2019 à Octobre 2019</span>
+            </div>
+            <div class="item">
+              <h4>Pâtissier</h4>
+              <span class="home">Cannelés Baillardran</span>
+              <p>Bordeaux</p>
+              <span class="date">2016 - 2019</span>
+            </div>
+            <div class="item">
+              <h4>Pâtissier</h4>
+              <span class="home">Faubourg Paris</span>
+              <p>Vancouver ( Canada )</p>
+              <span class="date">2013 - 2016</span>
+            </div>
+            <div class="item">
+              <h4>Pâtissier</h4>
+              <span class="home">Mallorca Catering</span>
+              <p>Madrid ( Espagne )</p>
+              <span class="date">2010 - 2011</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="public/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,803 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Lovers+Quarrel&family=Playfair+Display:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  justify-content: center;
+  font-family: "Playfair Display";
+  font-size: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h3 {
+  color: #b3d4de;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 600;
+  font-size: 31px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 19.3;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #b3d4de;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+  font-size: 19.3px;
+}
+
+html {
+  /* me permet de faire glisser n'importe quel clic sur le lien du menu */
+  scroll-behavior: smooth;
+  background: url(../img/backgound1.png);
+  background-size: cover;
+}
+
+body {
+  background: #151c21;
+  margin: auto;
+  max-width: 1440px;
+  display: block;
+}
+
+/* Navbar */
+header {
+  background: #151c21;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+header .content {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 83px;
+}
+header .content .logo a {
+  font-family: "Lovers quarrel", serif;
+  font-size: 60px;
+  color: #b3d4de;
+  text-decoration: none;
+}
+header .content nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 80px;
+}
+header .content nav ul li a {
+  color: white;
+  font-size: 19.3px;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+header .content nav ul li a:hover {
+  color: #6b1616;
+}
+
+.nav-responsive {
+  background-color: #b3d4de;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Index */
+.hidden {
+  display: none;
+}
+
+.index {
+  height: calc(110vh - 98px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.index .content {
+  display: flex;
+  align-items: center;
+  top: 100px;
+  margin: auto;
+  height: 702px;
+  width: 1274px;
+  justify-content: center;
+  padding: auto;
+}
+.index .content p {
+  font-family: "Playfair display";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 80px;
+  line-height: 106.52%;
+}
+.index .content .picture {
+  display: flex;
+  position: absolute;
+  background: #b3d4de;
+  height: 509px;
+  width: 313px;
+}
+.index .content .picture img {
+  position: absolute;
+  width: 313px;
+  height: 601px;
+  left: 10px;
+  top: 0px;
+}
+.index .content .letters {
+  display: flex;
+  position: absolute;
+}
+.index .content .letters #dev {
+  position: absolute;
+  width: 459px;
+  height: 85px;
+  top: -10rem;
+  left: -42rem;
+}
+.index .content .letters #web {
+  position: absolute;
+  width: 153px;
+  height: 85px;
+  left: 19rem;
+  top: -10rem;
+}
+.index .content .letters #full {
+  position: absolute;
+  width: 138px;
+  height: 85px;
+  left: -28rem;
+  top: 5rem;
+}
+.index .content .letters #stack {
+  position: absolute;
+  width: 195px;
+  height: 85px;
+  left: 18rem;
+  top: 5rem;
+}
+.index .content .lignes {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.index .content .lignes #ligne1 {
+  position: absolute;
+  top: 15rem;
+  width: 40rem;
+  border: 1px solid white;
+}
+.index .content .lignes #ligne2 {
+  position: absolute;
+  width: 70rem;
+  border: 2px solid white;
+}
+.index .content .lignes #ligne3 {
+  position: absolute;
+  width: 40rem;
+  top: 44rem;
+  border: 1px solid white;
+}
+.index .content .social-media {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  top: 52rem;
+}
+.index .content .social-media a {
+  color: white;
+  font-size: 56px;
+}
+.index .content .social-media a .link {
+  position: absolute;
+  left: 50px;
+}
+.index .content .social-media a .git {
+  position: absolute;
+  left: -50px;
+}
+.index .content .social-media a:hover {
+  color: #6b1616;
+  transition: 0.3s;
+}
+
+/* A propos */
+.aboutme {
+  background: #1c2429;
+  padding: 15px 83px;
+}
+.aboutme .content {
+  margin: auto;
+}
+.aboutme .content p {
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+.aboutme .content p span {
+  color: #b3d4de;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.aboutme .content .fil {
+  display: flex;
+}
+.aboutme .content .fil .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.aboutme .content .fil .col ul {
+  list-style: none;
+}
+.aboutme .content .fil .col ul li {
+  margin: 25px 0;
+  color: white;
+}
+.aboutme .content .fil .col ul li strong {
+  display: inline-block;
+  color: #b3d4de;
+  width: 90px;
+}
+.aboutme .content .fil .col ul li span {
+  background-color: #b3d4de;
+  color: #1c2429;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.aboutme .content .fil .col .content-interest {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutme .content .fil .col .content-interest .interest {
+  width: 100px;
+  height: 100px;
+  background-color: #151c21;
+  color: white;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.aboutme .content .fil .col .content-interest .interest:hover {
+  background-color: #6b1616;
+}
+.aboutme .content .fil .col .content-interest .interest img {
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills .content {
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 83px;
+  margin: auto;
+}
+.skills .content .fil {
+  display: flex;
+}
+.skills .content .fil .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .content .fil .col .skill > span {
+  font-family: "Playfaire Display";
+  font-weight: 500;
+  font-size: 31px;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+.skills .content .fil .col .skill .bar-progress {
+  height: 4px;
+  width: 80%;
+  background-color: #1c2429;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .content .fil .col .skill .bar-progress .progress {
+  background-color: #b3d4de;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+.skills .content .fil .col .skill .bar-progress span {
+  position: absolute;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  background-color: #b3d4de;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+.skills .content .fil .col .skill .bar-progress .htmlcss {
+  width: 0;
+  animation: 2s htmlcss forwards;
+}
+.skills .content .fil .col .skill .bar-progress .javascript {
+  width: 0;
+  animation: 2s javascript forwards;
+}
+.skills .content .fil .col .skill .bar-progress .php {
+  width: 0;
+  animation: 2s php forwards;
+}
+.skills .content .fil .col .skill .bar-progress .cms {
+  width: 0;
+  animation: 2s cms forwards;
+}
+.skills .content .fil .col .skill .bar-progress .react {
+  width: 0;
+  animation: 2s react forwards;
+}
+.skills .content .fil .col .skill .bar-progress .symfony {
+  width: 0;
+  animation: 2s symfony forwards;
+}
+.skills .content .fil .col .skill .bar-progress .sql {
+  width: 0;
+  animation: 2s sql forwards;
+}
+.skills .content .fil .col .skill .bar-progress .photoshop {
+  width: 0;
+  animation: 2s photoshop forwards;
+}
+.skills .content .fil .col .skill .bar-progress .git {
+  width: 0;
+  animation: 2s git forwards;
+}
+.skills .content .fil .col .skill .bar-progress .communication {
+  width: 0;
+  animation: 2s communication forwards;
+}
+.skills .content .fil .col .skill .bar-progress .team {
+  width: 0;
+  animation: 2s team forwards;
+}
+.skills .content .fil .col .skill .bar-progress .creativity {
+  width: 0;
+  animation: 2s creativity forwards;
+}
+.skills .content .fil .col .skill .bar-progress .curiosity {
+  width: 0;
+  animation: 2s curiosity forwards;
+}
+.skills .content .fil .col .skill .bar-progress .independent {
+  width: 0;
+  animation: 2s independent forwards;
+}
+.skills .content .fil .col .skill .bar-progress .stiff {
+  width: 0;
+  animation: 2s stiff forwards;
+}
+.skills .content .fil .col .skill .bar-progress .pacient {
+  width: 0;
+  animation: 2s pacient forwards;
+}
+.skills .content .fil .col .skill .bar-progress .organised {
+  width: 0;
+  animation: 2s organised forwards;
+}
+.skills .content .fil .col .skill .bar-progress .versatile {
+  width: 0;
+  animation: 2s versatile forwards;
+}
+
+@keyframes htmlcss {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes php {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes cms {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes symfony {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes sql {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes photoshop {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes communication {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes team {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes creativity {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes curiosity {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes independent {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes stiff {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes pacient {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes organised {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes versatile {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* CV */
+.cv {
+  background: #1c2429;
+}
+.cv .content {
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 83px;
+  margin: auto;
+}
+.cv .content .fil {
+  display: flex;
+}
+.cv .content .fil .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.cv .content .fil .col .item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #151c21;
+  position: relative;
+  border: 1px solid #b3d4de;
+}
+.cv .content .fil .col .item h4 {
+  font-size: 25px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.cv .content .fil .col .item .home {
+  font-family: "Neue Haas Grotesk Display Pro";
+  color: #b3d4de;
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.cv .content .fil .col .item .date {
+  display: block;
+  color: #b3d4de;
+  margin-bottom: 5px;
+  font-size: 19.3px;
+}
+.cv .content .fil .col .item p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Contact */
+.index-contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.index-contact .fil {
+  display: flex;
+}
+.index-contact .fil .col {
+  height: 656px;
+  width: 503px;
+}
+.index-contact .fil .col img {
+  position: absolute;
+  width: 503px;
+  height: 656px;
+  left: 485px;
+  top: 148px;
+  border: 3px solid #e9d6b6;
+}
+.index-contact .fil .contact {
+  background: #e4e4e4;
+  position: absolute;
+  right: 485px;
+  top: 205px;
+  border: 1px solid #cecece;
+  padding: 25px 15px 25px 50px;
+}
+.index-contact .fil .contact h2 {
+  color: #151c21;
+  font-family: "Corinthia";
+  margin: 25px 0 25px 0;
+}
+.index-contact .fil .contact p {
+  font-family: "Playfair Display" serif;
+  font-size: 19.3px;
+  color: #1c2429;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.index-contact .fil .contact .form {
+  display: flex;
+  flex-direction: row;
+  width: 370px;
+  height: 227px;
+  margin-left: 45px;
+  padding: 9px 7px;
+}
+.index-contact .fil .contact .form .left {
+  flex-direction: column;
+  align-items: stretch;
+}
+.index-contact .fil .contact .form .left .sex {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 178px;
+}
+.index-contact .fil .contact .form .left .sex .radioLabel {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 17px;
+  display: block;
+}
+.index-contact .fil .contact .form .left .sex .radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.index-contact .fil .contact .form .left .sex .radio input[type=radio] {
+  height: 15px;
+}
+.index-contact .fil .contact .form .left .sex .radio input[type=radio]:focus {
+  outline: invert;
+  background-color: #e9d6b6;
+}
+.index-contact .fil .contact .form .left input {
+  font-family: "Playfair display";
+  height: 38px;
+  width: 178px;
+  border: none;
+  padding-left: 7px;
+  border-radius: 4px;
+}
+.index-contact .fil .contact .form .left input:focus {
+  outline: 2px solid #e9d6b6;
+}
+.index-contact .fil .contact .form .left select {
+  font-family: "Playfair display";
+  background-color: white;
+  height: 38px;
+  width: 178px;
+  border: none;
+  padding-left: 7px;
+  border-radius: 4px;
+}
+.index-contact .fil .contact .form .left select:focus {
+  outline: 2px solid #e9d6b6;
+}
+.index-contact .fil .contact .form .left .email {
+  margin: 5px 0;
+}
+.index-contact .fil .contact .form .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.index-contact .fil .contact .form .right .message {
+  width: 171px;
+  height: 124px;
+  padding: 7px;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+}
+.index-contact .fil .contact .form .right .message:focus {
+  outline: 2px solid #e9d6b6;
+}
+.index-contact .fil .contact .form .right .bouton {
+  align-self: flex-end;
+  font-family: "Playfair display";
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 80px;
+  height: 30px;
+  background-color: #e9d6b6;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.index-contact .fil .contact .form .right .bouton:hover {
+  background-color: #1c2429;
+  color: #e9d6b6;
+  transition: 0.5s;
+}
+
+/* Section Responsive */
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background-color: #1c2429;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+  .nav-responsive {
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #aboutme .fil {
+    display: block;
+  }
+  #aboutme .fil .col {
+    width: fit-content;
+  }
+  #skills .fil {
+    display: block;
+  }
+  #skills .fil .col {
+    width: 100%;
+  }
+  #skills .fil .col .bar-progress {
+    width: 100%;
+  }
+  #cv .fil {
+    display: block;
+  }
+  #cv .fil .col {
+    width: 90%;
+  }
+  #cv .fil .right {
+    margin-left: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

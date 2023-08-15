@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Contacts</title>
+  </head>
+  <body class="back-font">
+    <header >
+      <nav class="navigation">
+          <ul class="list menu-list">
+            <li class="menu-item"><a href="./index.html" class="link menu-link ">CV</a></li>
+            <li class="menu-item"><a href="#education" class="link menu-link ">Education</a></li>
+            <li class="menu-item"><a href="./hobbies.html" class="link menu-link ">Hobbies</a></li>
+            <li class="menu-item"><a href="./contact.html"  class="link menu-link ">Contacts</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="titre">
+        <h1 class="contact-title">Contacts</h1>
+        <p class="contact-text">
+          Si vous avez des questions, je serai heureux d’y répondre!
+        </p>
+        <p class="contact-text">
+          Pour ce faire, contactez-moi de manière pratique et je vous répondrai
+          bientôt!
+        </p>
+      </section>
+      <section class="contact">
+        <div class="contact-link">
+          <ul class="list contact-link-list">
+            <li class="contact-link-item">
+              <a href="mailto:lyoubomyr.didyk@le-campus-numerique.fr">
+                <svg class="svg-contact" width="100" height="100">
+                  <use href="images/sprite.svg.svg#icon-mail"></use>
+                </svg>
+              </a>
+              <p>E-mail</p>
+            </li>
+            <li class="contact-link-item">
+              <a href="">
+                <svg class="svg-contact" width="100" height="100">
+                  <use href="images/sprite.svg.svg#icon-desktop"></use>
+                </svg>
+              </a>
+              <p>Web-site</p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <p class="form-text">
+            Vous pouvez également écrire vos messages ici!
+          </p>
+          <p class="form-text">Vous dovez remplir tous les champs!</p>
+          <form class="form" action="https://httpbin.org/post" method="post">
+           <div class="sexe">
+             <label>
+              <input type="radio" name="sex" value="homme">
+              <span class="description-sexe">Homme</span> 
+            </label>
+            <label>
+              <input type="radio" name="sex" value="femme">
+              <span class="description-sexe">Femme</span>  
+            </label>
+           </div>
+            <label>
+              <span class="form-desc">Nom</span>
+              <input type="text" />
+            </label>
+            <label>
+              <span class="form-desc">Télephone</span>
+              <input type="tel" name="tel"  />
+            </label>
+            <label>
+              <span class="form-desc">Email</span>
+              <input type="text" name="email" placeholder="example@gmail.com" required />
+            </label>
+            <label>
+              <span class="form-desc">Message</span>
+              <textarea name="comment" cols="50" rows="10"></textarea>
+            </label>
+            <button class="btn-form" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
